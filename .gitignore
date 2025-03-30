@@ -1,0 +1,17 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore dependency folders (if using a JS framework)
+node_modules/
+
+# Ignore static site generator build output
+dist/
+build/
+
+# Ignore sensitive environment/config files (API keys, payment settings, etc.)
+.env
+.env.local
