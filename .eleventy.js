@@ -3,7 +3,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("laptops", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/laptops/*.md");
   });
-
+  // Copy images to output folder
+  eleventyConfig.addPassthroughCopy("src/images");
   return {
     dir: {
       input: 'src',
